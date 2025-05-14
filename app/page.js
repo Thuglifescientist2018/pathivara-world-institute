@@ -172,14 +172,28 @@ export default function Home() {
 
             {/* Contact Info */}
             <div className="text-xs text-gray-600 text-center mt-2">
-              Jorpati-6, Narayanatar, Kathmandu<br/>
-              01-4912727/9767222671<br/>
-              9767222671<br/>
-              pathibharaworldinstitute@gmail.com
+              <p className="font-bold mb-2">For more information</p>
+              <a
+                href="tel:9851403323"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-200"
+              >
+                Call: 9851403323
+              </a>
             </div>
           </section>
         </section>
       </main>
+
+      {/* Sticky Developer Credit */}
+      <a
+        href="https://www.tiktok.com/@damak.ko.develope"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 left-4 z-50 bg-black/80 text-white px-4 py-2 rounded-lg text-xs font-semibold shadow-lg hover:bg-black transition"
+        style={{ textDecoration: 'none' }}
+      >
+        Developed by Damak ko Developer
+      </a>
     </div>
   );
 }
