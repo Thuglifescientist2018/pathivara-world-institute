@@ -58,7 +58,7 @@ export default function GalleryPage() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold text-blue-900 mb-6">Gallery</h1>
-      <p className="mb-8 text-gray-700">A showcase of our institute's activities, students, and events.</p>
+      <p className="mb-8 text-gray-700">A showcase of our institute&apos;s activities, students, and events.</p>
       <div ref={galleryRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.map((img, idx) => (
           <a
