@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 
@@ -68,8 +69,24 @@ export default function Home() {
             <p className="text-xs md:text-sm text-gray-700">Narayanatar, Lama Petrol Pump, Jorpati</p>
           </div>
         </div>
-        <div className="mt-4 md:mt-0">
+        <div className="flex items-center gap-6 mt-4 md:mt-0">
           <span className="bg-red-600 text-white px-4 py-1 rounded-full font-bold text-lg">60% Off</span>
+          <nav className="flex gap-4">
+            <Link
+              href="/gallery"
+              className="relative px-3 py-2 font-semibold text-blue-900 rounded transition duration-200 hover:bg-blue-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <span className="relative z-10">Gallery</span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-700 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
+            </Link>
+            <Link
+              href="/announcements"
+              className="relative px-3 py-2 font-semibold text-blue-900 rounded transition duration-200 hover:bg-blue-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <span className="relative z-10">Announcements</span>
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-700 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
+            </Link>
+          </nav>
         </div>
       </header>
 
